@@ -1,0 +1,13 @@
+<!-- tasks is an object that displays all of the task-item objects -->
+<!-- why can we not just put this in app.component.html? We can, its just more organized this way -->
+<!-- onDeleteTask line goes into tasks.component.ts and calls "deleteTask()"-->
+
+<!-- we have to "embed" the app-add-task into this component (the tasks component) because 
+later we will connect it to a router and this will be helpful for some reason -->
+<app-add-task (onAddTask)="addTask($event)"></app-add-task>
+<app-task-item 
+    *ngFor="let task of tasks" 
+    [task]="task" 
+    (onDeleteTask)="deleteTask(task)"
+    (onToggleReminder)="toggleReminder(task)"
+></app-task-item>

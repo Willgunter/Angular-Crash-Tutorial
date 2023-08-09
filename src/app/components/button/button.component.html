@@ -1,0 +1,9 @@
+<!-- [ngStyle] = is something called a "directive", what does that mean??
+Directives are classes that add additional behavior to angular elements-->
+<button 
+    [ngStyle]="{'background-color': color}" 
+    class="btn"
+    (click)="onClick()"
+> 
+    {{ text }} 
+</button>
