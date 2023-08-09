@@ -1,3 +1,5 @@
+Result of following Traversy Media's tutorial on Angular (https://www.youtube.com/watch?v=3dHNOWTI7H8)
+
 # AngularCrash
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 16.1.3.
